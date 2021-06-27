@@ -34,7 +34,7 @@ export class ParticlesComponent implements OnInit {
         }
       },
       opacity: {
-        value: 0.5,
+        value: 1,
         random: true,
         anim: {
           enable: false,
@@ -63,10 +63,8 @@ export class ParticlesComponent implements OnInit {
       move: {
         enable: true,
         speed: 3,
-        direction: "none",
         random: false,
         straight: false,
-        out_mode: "out",
         bounce: false,
         attract: {
           enable: false,
@@ -76,7 +74,6 @@ export class ParticlesComponent implements OnInit {
       }
     },
     interactivity: {
-      detect_on: "canvas",
       events: {
         onhover: {
           enable: false,
