@@ -1,4 +1,32 @@
-.home_image {
+*{
+    background-color: #c8c8c8;
+}
+
+.homepage_portrait {
     height: 100vh;
-    filter: grayscale(100%);
+    filter: grayscale(70%);
+}
+
+.main {
+    width: 100%;
+    margin: auto;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 800;
+    margin: 5px;
+}
+
+.subtitle{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
 }
