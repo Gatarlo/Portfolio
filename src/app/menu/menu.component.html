@@ -1,0 +1,37 @@
+<mat-drawer-container class="container" [hasBackdrop]="true">
+    <mat-drawer #drawer [mode]="mode.value">
+        I'm a drawer
+    </mat-drawer>
+    <mat-drawer-content>
+        <mat-form-field appearance="fill">
+            <mat-label>
+                Sidenav mode
+            </mat-label>
+            <mat-select #mode value="side">
+            <mat-option value="over">
+                Over
+            </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>
+                Has backdrop
+            </mat-label>
+            <mat-select #hasBackdrop>
+                <mat-option>
+                Unset
+                </mat-option>
+                <mat-option [value]="true">
+                True
+                </mat-option>
+                <mat-option [value]="false">
+                False
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button mat-raised-button (click)="drawer.toggle()">
+            Toggle drawer
+        </button>
+    </mat-drawer-content>
+</mat-drawer-container>
+  
