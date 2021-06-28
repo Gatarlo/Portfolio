@@ -21,34 +21,34 @@ export class ParticlesComponent implements OnInit {
         }
       },
       color: {
-        value: '#cdc87e'
+        value: '#fff58c'
       },
       shape: {
         type: 'polygon',
         stroke: {
           width: 0.5,
-          color: "#ffffff"
+          color: "#FFFFFF"
         },
         polygon: {
-          nb_side: 6
+          sides: 6,
         }
       },
       opacity: {
-        value: 1,
+        value: 0.6,
         random: true,
         anim: {
           enable: false,
           speed: 0.1,
-          opacity_min: 0.5,
+          opacity_min: 0.3,
           sync: false
         }
       },
       size: {
-        value: 100,
+        value: 80,
         random: false,
         anim: {
           enable: false,
-          speed: 10,
+          speed: 40,
           size_min: 40,
           sync: false
         }
